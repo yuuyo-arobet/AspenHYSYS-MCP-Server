@@ -274,7 +274,7 @@ PYTHONPATH=src pytest -q
 ## 参考資料
 
 - [Aspen Plus MCP Server (brack101)](https://github.com/brack101/AspenPlus-MCP-Server) — Aspen Plus 版、設計の参考
-- [Aspen HYSYS Customization Guide (PDF)](https://sites.ualberta.ca/CMENG/che312/F06ChE416/HysysDocs/AspenHYSYSCustomizationGuide.pdf) — COM Automation 公式リファレンス
+- [Aspen HYSYS Customization Guide (PDF, archive.org ミラー)](https://ia801808.us.archive.org/25/items/manualzz-id-1157209/1157209.pdf) — COM Automation の公式リファレンス (AspenTech, V7.3)。原典は [AspenTech サポートポータル](https://esupport.aspentech.com) で配布
 - [Model Context Protocol 仕様](https://github.com/modelcontextprotocol) — MCP 標準
 
 ---
