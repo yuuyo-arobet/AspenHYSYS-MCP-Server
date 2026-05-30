@@ -1,5 +1,12 @@
 # HYSYS MCP Server
 
+[![tests](https://github.com/yuuyo-arobet/AspenHYSYS-MCP-Server/actions/workflows/tests.yml/badge.svg)](https://github.com/yuuyo-arobet/AspenHYSYS-MCP-Server/actions/workflows/tests.yml)
+
+> **English**: An MCP (Model Context Protocol) server that lets Claude Code / Claude Desktop
+> drive Aspen HYSYS in natural language. 51 tools across read / session / write / flowsheet-build,
+> gated by a safe mode (`HYSYS_MCP_MODE`) that is **read-only by default**. Windows-only (HYSYS COM),
+> verified on HYSYS V14. See the Japanese sections below for full docs.
+
 Aspen HYSYS を **Claude Code / Claude Desktop から自然言語で操作**するための MCP
 (Model Context Protocol) サーバーです。
 
