@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hysys-mcp"
+version = "0.1.0"
+description = "MCP server for Aspen HYSYS process simulation"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+    {name = "yuuyo-arobet"}
+]
+keywords = ["mcp", "hysys", "aspen", "process-simulation", "claude"]
+
+dependencies = [
+    "mcp>=0.9.0",
+    "pywin32>=306; sys_platform == 'win32'",
+    "pydantic>=2.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pytest-asyncio>=0.21",
+    "black>=23.0",
+    "ruff>=0.1.0",
+]
+
+[project.scripts]
+hysys-mcp = "hysys_mcp.server:main"
+
+[project.urls]
+Homepage = "https://github.com/yuuyo-arobet/AspenHYSYS-MCP-Server"
+Repository = "https://github.com/yuuyo-arobet/AspenHYSYS-MCP-Server"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.black]
+line-length = 100
+target-version = ["py310"]

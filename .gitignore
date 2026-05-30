@@ -1,0 +1,21 @@
+# Codex / Claude などツールのローカル成果物・状態
+.codex
+.claude/
+
+# 特定プロセス固有の情報を含むローカル実機スクリプト (公開しない)
+# 汎用サンプル (live_probe / live_build_test / live_build_test_full /
+# live_mcp_passthrough) のみ公開する。
+scripts/live_prod_test.py
+scripts/audit_typenames.py
+scripts/*_result.txt
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+
+# venv (Windows 側で生成)
+venv/
+.venv/
